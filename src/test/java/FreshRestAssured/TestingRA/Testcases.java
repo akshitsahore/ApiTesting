@@ -69,8 +69,8 @@ public class Testcases {
 	public void CreateUser() {
 		ExtentReportManager.test = ExtentReportManager.reports.startTest("CreateUser", "Create An User");
 		JSONObject params = new JSONObject();
-		params.put("name", "Jacob");
-		params.put("age", "20");
+		params.put("name", "AMAN");
+		params.put("age", "50");
 		params.put("salary", "200000");
 		ExtentReportManager.test.log(LogStatus.INFO, "Configured the JSON request body ", params.toJSONString());
 		RestAssured.baseURI = "https://dummy.restapiexample.com/";
